@@ -1,0 +1,47 @@
+<!-- Single page app -->
+
+<!DOCTYPE html>
+<html ng-app>
+<head>
+	<meta charset="utf-8"></title>
+	<title>Cuaderno alumnos - AngularJS</title>
+	<link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body ng-controller="AlumnosController">
+	<h1>Cuaderno alumnos</h1>
+	<div class="wrapper">
+		<div class="contact-item" ng-repeat="alumno in alumnos | orderBy:'curso' ">
+			<div class="nombre"> {{alumno.nombre}} - {{alumno.telefono}} </div>
+			<span class="curso"> {{alumno.curso}} </span>
+		</div>
+	</div>
+
+	<br />
+	<center>
+		<button ng-click="ShowForm()" ng-hide="formVisibility">Añadir Contacto</button>
+	</center>
+
+
+	<div ng-show="formVisibility" class="wrapper">
+		<h2>Añadir un contacto</h2>
+		Nombre: <input type="text" ng-model="nuevoAlumno.nombre" />
+		Telefono: <input type="text" ng-model="nuevoAlumno.telefono" />
+		Curso: <input type="text" ng-model="nuevoAlumno.curso" />
+		<button ng-click="Save()">Guardar</button>
+		<button ng-click="Cancel()">Cancelar</button>
+	</div>
+	
+	<!--
+	<script type="text/javascript" src="angular.min.js"></script>
+	-->
+	 
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.17/angular.min.js"></script>	
+	
+	<script>window.angular || document.write('<script src="lib/angular/angular.min.js"><\/script>');</script>	
+	
+	
+	
+	<script type="text/javascript" src="scripts.js"></script>
+	
+</body>
+</html>
