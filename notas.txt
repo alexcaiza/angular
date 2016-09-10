@@ -1,1 +1,3 @@
 ren gitignore.txt .gitignore
+
+npm install --save-dev grunt-shell
