@@ -1,3 +1,97 @@
-ren gitignore.txt .gitignore
+Single page app
+Paginas de una unica pagina
+La pagina no se recarga despues de cargar completamente
 
-npm install --save-dev grunt-shell
+Directivas en angular
+Modifican el dom de html (DOM Document Object Model)
+ng-app 
+ng-init
+ng-repeat
+
+Los datos del modelo se muestran en la vista.
+	Modelos creados dentro del ng-init
+	Modelos creados dentro del controller usando el scope
+
+Data binding
+	Two way - Data binding
+	Enlace de datos en dos direcciones
+
+node
+node --version
+
+npm
+administrador de paquetes de node
+node package manager
+
+servidor express js
+npm install -g express-generator
+
+Levantar server express: express nodeserverexpress
+
+Curso de node js
+	npm install
+	npm start
+		http://localhost:3000/
+		
+Grunt
+	Automatizador de tareas js
+	Test unitarios
+	Mesclar y reducir el tamaño de archivos javascript
+	ant maven -java
+	bldr.io - php
+	reik - ruby
+	
+	Instaladar el paquete como administrador
+	npm install -g grunt-cli
+		Command Line Interface
+		
+	Dependencias
+		grunt-contrib-jshint - Analisis de codigo
+		grunt-contrib-concat - Mescla dos o mas archivos
+		grunt-contrib-shell - Para ejecutar comando shell
+
+C:\JAVA\angular>npm install -g grunt-cli
+C:\Users\TATIANA\AppData\Roaming\npm\grunt -> C:\Users\TATIANA\AppData\Roaming\n
+pm\node_modules\grunt-cli\bin\grunt
+C:\Users\TATIANA\AppData\Roaming\npm
+`-- grunt-cli@1.2.0
+  +-- findup-sync@0.3.0
+  | `-- glob@5.0.15
+  |   +-- inflight@1.0.5
+  |   | `-- wrappy@1.0.2
+  |   +-- inherits@2.0.3
+  |   +-- minimatch@3.0.3
+  |   | `-- brace-expansion@1.1.6
+  |   |   +-- balanced-match@0.4.2
+  |   |   `-- concat-map@0.0.1
+  |   +-- once@1.4.0
+  |   `-- path-is-absolute@1.0.0
+  +-- grunt-known-options@1.1.0
+  +-- nopt@3.0.6
+  | `-- abbrev@1.0.9
+  `-- resolve@1.1.7
+
+Instalar grunt y los modulos con sus dependencias
+	npm install --save-dev
+  
+package.json
+{
+  "name": "miproyecto",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-nodeunit": "~0.4.1",
+    "grunt-contrib-uglify": "~0.5.0"
+  }
+}
+
+C:\JAVA\angular\miproyecto>grunt --version
+grunt-cli v1.2.0
+grunt v0.4.5
+
+Intalar grunt init
+	npm install -g grunt-init
+	npm install grunt-contrib-watch --save-dev
+	
+	

@@ -1,3 +1,10 @@
 grunt/node_modules
+grunt/hola/bower_components
 grunt/build
 grunt/deploy
+yeoman/hola/node_modules
+yeoman/hola/bower_components
+yeoman/build
+yeoman/deploy
+yeoman/test
+yeoman/.tmp
