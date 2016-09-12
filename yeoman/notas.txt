@@ -1,0 +1,65 @@
+C:\Users\TATIANA\AppData\Roaming\npm
+
+Versiones
+	node --version && npm --version
+	git --version
+	yo --version
+	bower --version
+	grunt --version
+
+Intalar YEOMAN como administrador
+	npm install -g yo
+	npm install --global yo
+	
+bower
+	Gestor de dependencias
+	bower.json
+
+Instalar generador AngularJS de YEOMAN
+	npm i -g yo generator-karma
+	npm install -g generator-karma
+	npm install -g generator-angular
+	npm install --global generator-angular@0.9.8
+
+Crear un proyecto en angular
+	mkdir tareas && cd tareas
+	yo angular
+	npm install
+	
+Server grunt
+	grunt serve
+	http://localhost:9000/#/
+	Detener server
+		Ctrl C
+	
+Karma
+	Spectacular Test Runner for JavaScript.
+	Pruebas unitarias con Karma y Jasmine
+	- Configurar karma
+		npm install grunt-karma --save-dev
+		npm info -g generator-karma
+		grunt test -V
+		yo karma
+	- C:\JAVA\angular\tareas\test\karma.conf.js
+		'bower_components\jquery\dist\jquery.js',
+		'bower_components\jquery-ui\jquery-ui.js',
+		'bower_components\angular-ui-sortable\sortable.js',
+	- Ejecutar los siguientes comandos:
+		grunt test
+	
+.htaccess
+	Configurar los permisos de la aplicacion
+	
+Ambiente de desarrollo
+	Notepad++
+		TextFX Characters Plugin
+		
+Modulos
+	AngularUI - Modulo sortable
+	
+Paquetes instalados en la app
+	bower list
+	bower search angular-ui-sortable
+	- Intalar el paquete con bower (angular-ui-sortable y jquery-ui al mismo tiempo)
+	    bower install --save angular-ui-sortable jquery-ui
+	
