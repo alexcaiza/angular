@@ -62,4 +62,23 @@ Paquetes instalados en la app
 	bower search angular-ui-sortable
 	- Intalar el paquete con bower (angular-ui-sortable y jquery-ui al mismo tiempo)
 	    bower install --save angular-ui-sortable jquery-ui
-	
+
+Angular-Local-Storage
+	Modulo para almacenar datos en localhost (Si se recarga la pagina no desaparecen los datos)
+	Intalacion del modulo:
+		bower install --save angular-local-storage
+	Import's en index.html
+		<script src="bower_components/jquery-ui/jquery-ui.js"></script>
+		<script src="bower_components/angular-ui-sortable/sortable.js"></script>
+		<script src="bower_components/angular-local-storage/dist/angular-local-storage.js"></script>
+	Dependencias en app.js
+		angular.module('tareasApp', [
+			'LocalStorageModule'
+		  ])
+	Instalar el LocalStorageService (Cambio de prefijo)
+		localStorageServiceProvider.setPrefix('ls');
+	Actualizar el main controller
+		Añadir dependencia LocalStorage
+		Watch listener
+		
+		

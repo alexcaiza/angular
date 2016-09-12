@@ -8,3 +8,6 @@ yeoman/build
 yeoman/deploy
 yeoman/test
 yeoman/.tmp
+yeoman/tareas/node_modules
+yeoman/tareas/bower_components
+yeoman/tareas/.tmp
