@@ -85,16 +85,31 @@ Angular-Local-Storage
 	
 Prototipos
 	bower install angular-bootstrap
+	bower install angular-bootstrap#0.11.0 -S
+	bower install angular-bootstrap#0.14.3 -S
+
+Recursos
+	http://es.lipsum.com
+	http://lorempixel.com/960/450/
+	http://lorempixel.com/960/450/sports/
+	http://lorempixel.com/960/450/food/
+	http://lorempixel.com/960/450/nature/
+	people business transport
 	
 Codigo fuente curso de angular:
 	https://drive.google.com/folderview?id=0B-jqGIKG1Mh4Q05hNHVONlFxelk&usp=sharing﻿
 		
-Creacion de Controllers con YEOMAN
-		yo angular:route articulos 
-			(Crea un controller, view, test)
+
 Rutas:
 	Se encuentran dentro del archivo app.js
 	Angular sabe que Controller y que View va a usar cuando escribimos una URL en el navegador.
+	
+	Creacion de Rutas con YEOMAN
+	
+	yo angular:route articulos
+	yo angular:route galeria 
+	
+	(Crea un controller, view, test)
 	
 	/ index, pagina raiz de nuestro proyecto
 	/about, pagina view/about.html
@@ -102,9 +117,20 @@ Rutas:
 	
 	$routeProvider: Las rutas usan $routeProvider que tiene dos parametros:
 		1.- La ruta Ejm: /
-		2.- Un objeto {} el templateUrl y el controller
+		2.- Un objeto {} que tiene dos atributos: el templateUrl y el controller
 			2.1.- templateUrl: representa los parciales de la pagina para renderizar una determinada View cuando se utiliza la directiva ng-view
 			2.2.- controller: Definir el controller asociado a la vista
 	
 	
-		
+	
+'use strict'
+	Caracteristica en ECMAScript5 (Strict mode) (JavaScript 1.8.5)
+	El archivo o la funcion opere en un contexto estricto
+	
+Directiva ng-grid
+	bower install ng-grid
+		bower angular-ui-grid#^3.2.1   install angular-ui-grid#
+		angular-ui-grid#3.2.1 bower_components\angular-ui-grid
+	bower install ui-grid --save
+	bower install angular-ui-grid --save
+	
