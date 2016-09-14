@@ -11,6 +11,8 @@ Intalar YEOMAN como administrador
 	npm install -g yo
 	npm install --global yo
 	
+	yo --help
+	
 bower
 	Gestor de dependencias
 	bower.json
@@ -80,5 +82,29 @@ Angular-Local-Storage
 	Actualizar el main controller
 		Añadir dependencia LocalStorage
 		Watch listener
+	
+Prototipos
+	bower install angular-bootstrap
+	
+Codigo fuente curso de angular:
+	https://drive.google.com/folderview?id=0B-jqGIKG1Mh4Q05hNHVONlFxelk&usp=sharing﻿
 		
+Creacion de Controllers con YEOMAN
+		yo angular:route articulos 
+			(Crea un controller, view, test)
+Rutas:
+	Se encuentran dentro del archivo app.js
+	Angular sabe que Controller y que View va a usar cuando escribimos una URL en el navegador.
+	
+	/ index, pagina raiz de nuestro proyecto
+	/about, pagina view/about.html
+	/articulos, pagina view/articulos.html
+	
+	$routeProvider: Las rutas usan $routeProvider que tiene dos parametros:
+		1.- La ruta Ejm: /
+		2.- Un objeto {} el templateUrl y el controller
+			2.1.- templateUrl: representa los parciales de la pagina para renderizar una determinada View cuando se utiliza la directiva ng-view
+			2.2.- controller: Definir el controller asociado a la vista
+	
+	
 		
