@@ -16,7 +16,8 @@ angular.module('prototipoApp', [
     'ngRoute',
     'ngSanitize',
     'ngTouch',
-	'ui.bootstrap'
+	'ui.bootstrap',
+	'ui.grid',
   ])
   
   .config(function ($routeProvider) {
@@ -36,6 +37,10 @@ angular.module('prototipoApp', [
       .when('/galeria', {
         templateUrl: 'views/galeria.html',
         controller: 'GaleriaCtrl'
+      })
+      .when('/mienbros', {
+        templateUrl: 'views/mienbros.html',
+        controller: 'MienbrosCtrl'
       })
       .otherwise({
         redirectTo: '/'

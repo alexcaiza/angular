@@ -107,7 +107,8 @@ Rutas:
 	Creacion de Rutas con YEOMAN
 	
 	yo angular:route articulos
-	yo angular:route galeria 
+	yo angular:route galeria
+	yo angular:route mienbros	
 	
 	(Crea un controller, view, test)
 	
@@ -133,4 +134,14 @@ Directiva ng-grid
 		angular-ui-grid#3.2.1 bower_components\angular-ui-grid
 	bower install ui-grid --save
 	bower install angular-ui-grid --save
+	
+Imagenes bootstrap
+	<img ng-src="{{pic.url}}" class="img-rounded">
+	img-circle
+	img-rounded
+	img-thumbnail
+	
+Inyectar parametro en el controller $http
+	Servicio http dentro del controller para realizar peticiones http
+	
 	

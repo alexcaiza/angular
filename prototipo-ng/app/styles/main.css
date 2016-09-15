@@ -90,5 +90,11 @@ body{
     padding: 60px;
 }
 
-.thumbnails img{
-width:100%}
+.thumbnails img {
+	width:100%
+}
+
+.gridStyles {
+	width: 940px;
+	height: 300px;
+}
