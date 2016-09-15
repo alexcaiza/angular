@@ -98,3 +98,21 @@ body{
 	width: 940px;
 	height: 300px;
 }
+
+.ngRow.even{
+	background: AliceBlue;
+}
+		
+.ngRow.odd{
+	background: YellowGreen;
+}
+
+.ui-grid-row:nth-child(odd) .ui-grid-cell{
+  background-color: AliceBlue;
+}
+.ui-grid-row:nth-child(even) .ui-grid-cell{
+  background-color: YellowGreen;
+}
+.ui-grid-header-cell-row {
+  background: orange;
+}﻿

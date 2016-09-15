@@ -135,6 +135,18 @@ Directiva ng-grid
 	bower install ui-grid --save
 	bower install angular-ui-grid --save
 	
+	Color de las filas:
+		odd: css para filas pares
+		even: css para filas impares
+		
+		.ngRow.even{
+			background: AliceBlue;
+		}
+		
+		.ngRow.odd{
+			background: YellowGreen;
+		}
+	
 Imagenes bootstrap
 	<img ng-src="{{pic.url}}" class="img-rounded">
 	img-circle

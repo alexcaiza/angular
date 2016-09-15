@@ -16,7 +16,14 @@ angular.module('prototipoApp').controller('MienbrosCtrl', function ($scope, $htt
 	});
 	
 	$scope.gridOptions = {
-		data: 'miembros'
+		data: 'miembros',
+		columnDefs: [
+			{field:'no', displayName: 'N°.'},
+			{field:'nombre', displayName: 'Nombre'},
+			{field:'fidelidad', displayName: 'Puntos Fidelidad'},
+			{field:'fechaUnion', displayName: 'Fecha de Union'},
+			{field:'tipoMiembro', displayName: 'Tipo de Miembro'},
+		]
 	};
 	
 	/*
