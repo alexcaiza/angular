@@ -18,6 +18,8 @@ angular.module('prototipoApp', [
     'ngTouch',
 	'ui.bootstrap',
 	'ui.grid',
+	'ui.grid.edit',
+	'ui.grid.cellNav'
   ])
   
   .config(function ($routeProvider) {

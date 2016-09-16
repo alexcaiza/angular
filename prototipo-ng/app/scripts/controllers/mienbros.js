@@ -7,7 +7,8 @@
  * # MienbrosCtrl
  * Controller of the prototipoApp
  */
-angular.module('prototipoApp').controller('MienbrosCtrl', function ($scope, $http) {
+angular.module('prototipoApp')
+.controller('MienbrosCtrl', function ($scope, $http, $modal) {
     
 	$http.get('http://localhost:9000/miembros.json')
 	.success(function(data){
@@ -17,6 +18,10 @@ angular.module('prototipoApp').controller('MienbrosCtrl', function ($scope, $htt
 	
 	$scope.gridOptions = {
 		data: 'miembros',
+		enableSorting: true,
+		enableCellSelection: true,
+		enableRowSelection: true,
+		enableCellEdit: true,
 		columnDefs: [
 			{field:'no', displayName: 'N°.'},
 			{field:'nombre', displayName: 'Nombre'},
@@ -26,18 +31,40 @@ angular.module('prototipoApp').controller('MienbrosCtrl', function ($scope, $htt
 		]
 	};
 	
-	/*
-	$http.get('http://localhost:9000/galeria.json')
-	.then(function(response){
-		console.log(response);
-      $scope.miembros = response.data;
-    }, function(){
-		console.log("Error en el http.get request");
-	});﻿
-	
-	$scope.gridOptions = {
-		data: 'miembros'
+	$scope.showModal = function() {
+		$scope.nuevoMiembro={};
+		var modalInstance = $modal.open({
+			templateUrl: 'views/add-miembros.html',
+			controller: 'AddNuevoMiembroCTrl',
+			resolve: {
+				nuevoMiembro : function () {
+					return $scope.nuevoMiembro;
+				}
+			}
+		});
+		
+		modalInstance.result.then(function(selectedItem){
+			$scope.miembros.push({
+				no:$scope.miembros.length + 1,
+				nombre:$scope.nuevoMiembro.nombre,
+				tipoMiembro:$scope.nuevoMiembro.tipoMiembro,
+				fidelidad:$scope.nuevoMiembro.fidelidad,
+				fechaUnion:$scope.nuevoMiembro.fechaUnion
+			});
+		});
 	};
-	*/
+	//$scope.salvarNuevoMiembro = function(){}
+  }) 
+.controller('AddNuevoMiembroCTrl', function ($scope, $modalInstance, nuevoMiembro) {
+	$scope.nuevoMiembro = nuevoMiembro;
 	
-  });
+	$scope.salvarNuevoMiembro = function() {
+		$modalInstance.close(nuevoMiembro);
+	}
+	
+	$scope.cancelAdd=function(){
+		$modalInstance.dismiss('cancel');
+	};
+	
+	
+});

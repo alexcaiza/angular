@@ -156,4 +156,7 @@ Imagenes bootstrap
 Inyectar parametro en el controller $http
 	Servicio http dentro del controller para realizar peticiones http
 	
-	
+Formularios
+	Validacion de campos
+		ng-valid
+		ng-invalid
