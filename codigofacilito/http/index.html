@@ -1,0 +1,24 @@
+<html ng-app="AngularJS">
+    <head>
+        <title>Angular Controller</title>
+        <meta charset="utf-8">
+        <script src="../angular.min.js" type="application/javascript"></script>
+        <script src="controller.js" type="application/javascript"></script>
+    </head>
+    <body ng-controller="FirstController">
+        {{"Hola HTTP"}}
+        <br />
+        Title: <input type="text" ng-model="newPost.title">
+        Body: <input type="text" ng-model="newPost.body">
+        <button ng-click="addPost()">Enviar</button>
+        <br />
+        <ul>
+            <li ng-repeat="post in posts">
+                <h2>{{post.title}}</h2>  
+                <p>
+                    {{post.body}}
+                </p>
+            </li>
+        </ul>
+    </body>
+</html>
